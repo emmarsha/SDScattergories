@@ -1,4 +1,19 @@
-<button mat-raised-button (click)="startCountdown()">Start Countdown</button>
-<button mat-raised-button (click)="onPause()">Pause</button>
-<button mat-raised-button (click)="onReset()">Reset</button>
-<p>{{timer}}</p>
+<div class="timer-container">
+
+    <button class="timer-btn" mat-raised-button *ngIf="timerState!=='PAUSED'" (click)="startCountdown()">Start Countdown</button>
+    <button class="timer-btn" mat-raised-button *ngIf="timerState==='PAUSED'" (click)="startCountdown()">Resume Countdown</button>
+    <button class="timer-btn" mat-raised-button (click)="onPause()">Pause</button>
+    <button class="timer-btn" mat-raised-button (click)="onReset()">Reset</button>
+
+    <mat-slider 
+        min="1" 
+        max="150" 
+        step="1"
+        thumbLabel
+        tickInterval="1"
+        *ngIf="timerState==='STOPPED'" 
+        [(ngModel)]="timeLimit" 
+        (change)="updateCountdown()"></mat-slider>
+    
+    <p class="count">{{timer}}</p>
+</div>

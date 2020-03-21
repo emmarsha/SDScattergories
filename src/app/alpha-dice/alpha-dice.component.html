@@ -1,5 +1,18 @@
-<button mat-raised-button (click)="rollDice()">Roll</button>
+<div class="alpha-dice-container">
 
-<div *ngIf="letter"> 
-    {{letter}}
+    <button class="alpha-dice-btn" mat-raised-button (click)="rollDice()">Roll</button>
+
+
+    <mat-form-field>
+        <!-- <mat-label>Set Letter</mat-label> -->
+        <mat-select [(ngModel)]="selectedLetter">
+          <mat-option *ngFor="let letter of alphabet" [value]="letter">{{letter}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+    <h1 class="letter" *ngIf="selectedLetter"> 
+        {{selectedLetter}}
+    </h1>
+
 </div>

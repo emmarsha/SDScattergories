@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -10,7 +11,9 @@ import { GameScreenComponent } from './game-screen/game-screen.component';
 // -- Angular Materials -- //
 import { MatButtonModule } from '@angular/material/button';
 import { GameCardComponent } from './game-card/game-card.component';
-import { CardShuffleComponent } from './card-shuffle/card-shuffle.component';
+import { ListManagerComponent } from './list-manager/list-manager.component';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSliderModule } from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { CardShuffleComponent } from './card-shuffle/card-shuffle.component';
     AlphaDiceComponent,
     GameScreenComponent,
     GameCardComponent,
-    CardShuffleComponent
+    ListManagerComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSelectModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

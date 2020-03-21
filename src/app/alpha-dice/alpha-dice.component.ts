@@ -8,18 +8,25 @@ import { STRING_TYPE } from '@angular/compiler';
 })
 export class AlphaDiceComponent implements OnInit {
 
-  letter = '';
+  selectedLetter = '';
+
+  alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
   constructor() { }
 
   ngOnInit() {
+    this.rollDice();
   }
 
   rollDice() {
     const baseChar = ('A').charCodeAt(0);
     const charVal = Math.floor(Math.random() * 26);
 
-    this.letter = String.fromCharCode(baseChar + charVal);
+    this.selectedLetter = String.fromCharCode(baseChar + charVal);
+  }
+
+  setLetter(letter: string) {
+    this.selectedLetter = letter;
   }
 
 }

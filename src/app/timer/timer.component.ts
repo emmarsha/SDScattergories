@@ -10,16 +10,22 @@ import { timer, interval } from 'rxjs';
 })
 export class TimerComponent {
 
+  timeLimit = 200;
+
   timer = 120;
+
   timerSubscription = null;
 
-  timerState = 'PAUSED';
+  isPaused = false;
+
+  timerState = 'STOPPED';
 
   @Output() roundOver: EventEmitter<any> = new EventEmitter();
 
   startCountdown() {
     if (!this.timerSubscription || this.timerSubscription.isStopped) {
-      this.timerState = 'PLAY';
+      this.isPaused = false;
+      this.timerState = 'STARTED';
 
       this.timerSubscription = interval(1000).subscribe(() => {
         this.timer--;
@@ -34,16 +40,23 @@ export class TimerComponent {
 
   onReset() {
     this.stopTimer();
-    this.timer = 120;
+    this.timer = this.timeLimit;
+    this.isPaused = false;
+    this.timerState = 'STOPPED';
   }
 
   onPause() {
     this.stopTimer();
+    this.isPaused = true;
+    this.timerState = 'PAUSED';
   }
 
   stopTimer() {
     this.timerSubscription.unsubscribe();
-    this.timerState = 'PAUSED';
+  }
+
+  updateCountdown() {
+    this.timer = this.timeLimit;
   }
 
 }

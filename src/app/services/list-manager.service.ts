@@ -1,3 +1,5 @@
+import { Injectable } from '@angular/core'
+
 
 export const lists = [
         {
@@ -19,35 +21,131 @@ export const lists = [
         },
         {
             title: 'List Two',
-            categories: []
+            categories: [
+               'Authors',
+               'Bodies of water',
+               'Birds',
+               'Countries',
+               'Cartoon Characters',
+               'Holidays',
+               'Things that are squares',
+               'Things in the USA',
+               'Clothing',
+               'A relative',
+               'Games',
+               'Sports Stars'
+            ]
          },
          {
             title: 'List Three',
-            categories: []
+            categories: [
+               'School supplies',
+               'Things that are hot',
+               'Heroes',
+               'A girl\'s name',
+               'Fears',
+               'TV stars',
+               'Colors',
+               'Types of fish',
+               'Types of fruit',
+               'States',
+               'Sports equipment',
+               'Tools'
+            ]
          },
          {
             title: 'List Four',
-            categories: []
+            categories: [
+               'Breakfast foods',
+               'Gifts',
+               'Types of flowers',
+               'Ice cream flavors',
+               'Types of drinks',
+               'Toys',
+               'Cities',
+               'Things in the kitchen',
+               'Things in the ocean',
+               'Nicknames',
+               'Hobbies',
+               'Parts of the body'
+            ]
          },
          {
             title: 'List Five',
-            categories: []
+            categories: [
+               'Sandwiches',
+               'Intems in a catalog',
+               'World leaders/Politicians',
+               'School subjects',
+               'Excuses for being late',
+               'Type of dogs',
+               'Things that jump/bounce',
+               'Things in a park',
+               'Foreign cities',
+               'Stones/Gems',
+               'Things in an elementary school',
+               'Musical Instruments'
+            ]
          },
          {
             title: 'List Six',
-            categories: []
+            categories: [
+               'Nicknames',
+               'Things in the sky',
+               'Pizza toppings',
+               'Colleges/Universities',
+               'Animals',
+               'Things in a bathroom',
+               'Things that have spots',
+               'Historical figures',
+               'Things you\'re afraid of',
+               'Terms of endearment',
+               'Items in the room',
+               'Types of cereal'
+            ]
          },
          {
             title: 'List Seven',
-            categories: []
+            categories: [
+               'Fictional characters',
+               'Menu items',
+               'Magazines',
+               'Capitols',
+               'Kinds of candy',
+               'Items you save up to buy',
+               'Footware',
+               'Something you keep hidden',
+               'Items in a suitcase',
+               'Things with tails',
+               'Camping equipment',
+               'Crimes'
+            ]
          },
          {
             title: 'List Eight',
-            categories: []
+            categories: [
+               'Things that are sticky',
+               'Awards/Ceremonies',
+               'Cars',
+               'Spices/Herbs',
+               'Bad habits',
+               'Cosmetics/Toiletries',
+               'Celebrities',
+               'Cooking utensils',
+               'Reptiles/Amphibians',
+               'Parks',
+               'Leisure activities',
+               'Things you\'re allergic to'
+            ]
          },
          {
             title: 'List Nine',
-            categories: []
+            categories: [
+               'Restaurants',
+               'Notorious people',
+               'Fruits',
+               ''
+            ]
          },
          {
             title: 'List Ten',
@@ -84,16 +182,19 @@ export const lists = [
          {
             title: 'List Eighteen',
             categories: []
-         },
-         {
-            title: 'List Nineteen',
-            categories: []
          }
     ];
 
-export class ListManager {
+@Injectable({
+   providedIn: 'root'
+})
+export class ListManagerService {
 
     getLists() {
-        return 
+        return lists;
+    }
+
+    getListCount() {
+       return lists.length;
     }
 }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardShuffleComponent } from './card-shuffle.component';
+import { ListManagerComponent } from './list-manager.component';
 
-describe('CardShuffleComponent', () => {
-  let component: CardShuffleComponent;
-  let fixture: ComponentFixture<CardShuffleComponent>;
+describe('ListManagerComponent', () => {
+  let component: ListManagerComponent;
+  let fixture: ComponentFixture<ListManagerComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CardShuffleComponent ]
+      declarations: [ ListManagerComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CardShuffleComponent);
+    fixture = TestBed.createComponent(ListManagerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
