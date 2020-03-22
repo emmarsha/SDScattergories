@@ -1,12 +1,13 @@
 .alpha-dice-container {
-    min-height: 180px;
+    // min-height: 180px;
+    height: 100px;
 
     .alpha-dice-btn {
         margin: 10px;
     }
     
     .letter {
-        font-size: 80px;
+        font-size: 55px;
         margin: 0 auto;
         text-align: center;
     }

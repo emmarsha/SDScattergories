@@ -1,8 +1,59 @@
 .list-tabs {
     display: inline-block;
     cursor: pointer;
+    list-style: none;
+
+    .list-tab {
+        list-style: none;
+        // border-left: 1px solid black;
+        // border-top: 1px solid black;
+        padding: 8px 10px;
+        font-weight: 600;
+        margin: 0;
+        // border-top-left-radius: 5px;
+    }
+
+    .list-tab:hover {
+        background-color: red;
+        color: white;
+    }
 }
 
 .card-display {
     display: inline-block;
+    margin-left: 32%;
+
+    .logo {
+        height: 75px;
+        margin: 0 34px;
+    }
+
+    .next-btn {
+        float: right;
+    }
+
+    .card {
+        box-shadow: 0 5px 10px darkslategrey;
+        border: 1px solid lightslategrey;
+        border-radius: 25px;
+        padding: 20px 61px 20px 61px;
+        margin: 32px;
+
+        .card-title {
+            text-align: center;
+        }
+
+        .card-items {
+            padding: 0;
+
+            .card-item {
+                padding: 5px 0;
+                min-width: 140px;
+                border-bottom: 2px solid black;
+            }
+        }
+
+    }
+
+
 }

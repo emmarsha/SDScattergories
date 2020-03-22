@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core'
 
 export const lists = [
         {
-           title: 'List One',
+           title: 'List 1',
            categories: [
                 'A boy\'s name',
                 'A river',
@@ -20,7 +20,7 @@ export const lists = [
            ]
         },
         {
-            title: 'List Two',
+            title: 'List 2',
             categories: [
                'Authors',
                'Bodies of water',
@@ -37,7 +37,7 @@ export const lists = [
             ]
          },
          {
-            title: 'List Three',
+            title: 'List 3',
             categories: [
                'School supplies',
                'Things that are hot',
@@ -54,7 +54,7 @@ export const lists = [
             ]
          },
          {
-            title: 'List Four',
+            title: 'List 4',
             categories: [
                'Breakfast foods',
                'Gifts',
@@ -71,7 +71,7 @@ export const lists = [
             ]
          },
          {
-            title: 'List Five',
+            title: 'List 5',
             categories: [
                'Sandwiches',
                'Intems in a catalog',
@@ -88,7 +88,7 @@ export const lists = [
             ]
          },
          {
-            title: 'List Six',
+            title: 'List 6',
             categories: [
                'Nicknames',
                'Things in the sky',
@@ -105,7 +105,7 @@ export const lists = [
             ]
          },
          {
-            title: 'List Seven',
+            title: 'List 7',
             categories: [
                'Fictional characters',
                'Menu items',
@@ -122,7 +122,7 @@ export const lists = [
             ]
          },
          {
-            title: 'List Eight',
+            title: 'List 8',
             categories: [
                'Things that are sticky',
                'Awards/Ceremonies',
@@ -139,50 +139,159 @@ export const lists = [
             ]
          },
          {
-            title: 'List Nine',
+            title: 'List 9',
             categories: [
                'Restaurants',
                'Notorious people',
                'Fruits',
-               ''
+               'Things in a medicine cabinent',
+               'Toys',
+               'Household chores',
+               'Bodies of water',
+               'Authors',
+               'Halloween costumes',
+               'Weapons',
+               'Things that are round',
+               'Words associated with execise'
             ]
          },
          {
-            title: 'List Ten',
-            categories: []
+            title: 'List 10',
+            categories: [
+               'Sports',
+               'Song titles',
+               'Parts of the body',
+               'Ethnic foods',
+               'Things you shout',
+               'Birds',
+               'Words associated with money',
+               'Ways to get from here to there',
+               'Items in your car',
+               'Villians',
+               'Types of trees',
+               'Things you replace'
+            ]
          },
          {
-            title: 'List Eleven',
-            categories: []
+            title: 'List 11',
+            categories: [
+               'Baby foods',
+               'Famous duos and trios',
+               'Things found in a desk',
+               'Vacation spots',
+               'Diseases',
+               'Words associated with work',
+               'Items in a vending machine',
+               'Movie titles',
+               'Games',
+               'Things you wear',
+               'Beers',
+               'Things at a circus'
+            ]
          },
          {
-            title: 'List Twelve',
-            categories: []
+            title: 'List 12',
+            categories: [
+               'Vegetables',
+               'States',
+               'Things you throw away',
+               'Occupations',
+               'Appliances',
+               'Cartoon characters',
+               'Types of drinks',
+               'Musical groups',
+               'Store names',
+               'Articles of clothing',
+               'Personality traits',
+               'Colors'
+            ]
+         },
+         // {
+         //    title: 'List Thirteen',
+         //    categories: [
+         //       'Video games',
+         //       'Electronic gadgets',
+         //       'Board games',
+         //       'Things that use a remote',
+         //       'Card games',
+         //       'Internet lingo',
+         //       '',
+         //       'Historical events',
+         //       ''
+         //    ]
+         // },
+         {
+            title: 'List 13',
+            categories: [
+               'Things at the grocery store',
+               'Reasons to quit your job',
+               'Things that have stripes',
+               'Tourist attractions',
+               'Diet foods',
+               'Things found at the hospital',
+               'Food/Drink that is green',
+               'Weekend activities',
+               'Acronyms',
+               'Seafood',
+               'Christmas songs',
+               'Words ending with "-ly"'
+            ]
          },
          {
-            title: 'List Thirteen',
-            categories: []
+            title: 'List 14',
+            categories: [
+               'Words with double letters',
+               'Children\'s books',
+               'Things found at a bar',
+               'Hobbies',
+               'Names used in songs',
+               'Food you can eat raw',
+               'Places in Europe',
+               'Olympic events',
+               'Things you see at the zoo',
+               'Math terms',
+               'Movies',
+               'Things to do at a party'
+            ]
          },
          {
-            title: 'List Fourteen',
-            categories: []
+            title: 'List 15',
+            categories: [
+               'Kinds of soup',
+               'Things found in New York',
+               'Things you get tickets to',
+               'Things you do at work',
+               'Four letter words',
+               'Things you wouldn\'t touch',
+               'Spciy foods',
+               'Things at a wedding',
+               'Things you make',
+               'Places to hang out',
+               'Animal noises',
+               'Computer programs'
+            ]
          },
          {
-            title: 'List Fifteen',
-            categories: []
+            title: 'List 16',
+            categories: [
+               'Reasons to make a phone call',
+               'Types of weather',
+               'Titles people have',
+               'Things that have buttons',
+               'Items you take on a road trip',
+               'Things that have wheels',
+               'Things that make people smile',
+               'Things that kill time',
+               'Holiday Activities',
+               'Fairy tale characters',
+               'Things that can get you fired',
+               'Things you get in the mail'
+            ]
          },
-         {
-            title: 'List Sixteen',
-            categories: []
-         },
-         {
-            title: 'List Seventeen',
-            categories: []
-         },
-         {
-            title: 'List Eighteen',
-            categories: []
-         }
+         // {
+         //    title: 'List Eighteen',
+         //    categories: []
+         // }
     ];
 
 @Injectable({

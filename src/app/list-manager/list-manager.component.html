@@ -1,17 +1,18 @@
 <div class="list-tabs" *ngIf="lists">
-    <ul *ngFor="let list of lists; let idx = index">
-        <li (click)="selectList(idx)">{{list.title}}</li>
+    <ul>
+        <li class="list-tab" *ngFor="let list of lists; let idx = index" (click)="selectList(idx)">{{list.title}}</li>
     </ul>
 </div>
 
 <div class="card-display" *ngIf="selected">
     <button mat-mini-fab (click)="prev()" color="primary">Prev</button>
-    <button mat-mini-fab (click)="next()" color="primary">Next</button>
+    <button class="next-btn" mat-mini-fab (click)="next()" color="primary">Next</button>
     <div class="card">
-        <h1>{{selected.title}}</h1>
-        <ul *ngFor="let item of selected.categories">
-            <li>{{item}}</li>
-        </ul>
+        <img class="logo" src="../../assets/images/logo.png" alt="logo">
+        <h1 class="card-title" >{{selected.title}}</h1>
+        <ol class="card-items">
+            <li class="card-item" *ngFor="let item of selected.categories">{{item}}</li>
+        </ol>
     </div>
 </div>
 
